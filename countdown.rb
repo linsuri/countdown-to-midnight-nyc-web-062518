@@ -2,18 +2,19 @@
 
 def countdown(number)
   counter = number
-  while number > 0
-    puts "#{number} SECOND(S)!"
+  while counter > 0
+    puts "#{counter} SECOND(S)!"
     counter -=
   end
   "HAPPY NEW YEAR!"
 end
 
 def countdown_with_sleep(number)
-  while number > 0
-    puts "#{number} SECOND(S)!"
+  counter = number
+  while counter > 0
+    puts "#{counter} SECOND(S)!"
     sleep 1
-    number -=
+    counter -=
   end
   "HAPPY NEW YEAR!"
 end
